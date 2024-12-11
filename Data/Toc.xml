@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1" DescendantCount="13">
+    <!-- saved from url=(0014)about:internet -->
+    <TocEntry Title="Welcome" Link="/Content/Subjects/Welcome.htm" ComputedResetPageLayout="true" ComputedFirstTopic="true" DescendantCount="0" />
+    <TocEntry Title="Preparing for Data Input" Link="/Content/Subjects/Preparing for Data Input.htm" ComputedFirstTopic="false" DescendantCount="5">
+        <TocEntry Title="Management Companies" Link="/Content/Subjects/Management Companies.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Contacts" Link="/Content/Subjects/Contacts.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Properties" Link="/Content/Subjects/Properties.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Account Mappings" Link="/Content/Subjects/Account Mappings.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Parsing Rules" Link="/Content/Tabs/Company Info/Configure Parsing Rules.htm" ComputedFirstTopic="false" DescendantCount="0" />
+    </TocEntry>
+    <TocEntry Title="Processing Data" Link="/Content/Processing Data.htm" StartSection="false" SectionNumberReset="continue" VolumeNumberReset="same" ChapterNumberReset="continue" ComputeToc="false" ReplaceMergeNode="false" ComputedFirstTopic="false" DescendantCount="3">
+        <TocEntry Title="Import from Email Inbox" Link="/Content/Tabs/Sheet Management/Import from Email Inbox.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Import Trial Balance Manually" Link="/Content/Tabs/Sheet Management/Import Manually.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Reprocessing Data" Link="/Content/Tabs/Sheet Management/Reprocessing Trial Balances.htm" ComputedFirstTopic="false" DescendantCount="0" />
+    </TocEntry>
+    <TocEntry Title="Tab Reference" Link="/Content/Tab Reference.htm" ComputedFirstTopic="false" DescendantCount="0" />
+    <TocEntry Title="Error and Status Messages" Link="/Content/Subjects/Error and Status Messages.htm" ComputedFirstTopic="false" DescendantCount="0" />
+</CatapultToc>

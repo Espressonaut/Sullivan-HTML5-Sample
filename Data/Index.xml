@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultTargetIndex Count="6">
+    <!-- saved from url=(0014)about:internet -->
+    <IndexEntry>
+        <Entries>
+            <IndexEntry Term="Account Mapping">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Account Mapping" Link="/Content/Subjects/Account Mappings.htm#kanchor4" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Map Accounts" Link="/Content/Tabs/Account Mapping/Map Accounts.htm#kanchor8" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Companies">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Management Companies" Link="/Content/Subjects/Management Companies.htm#kanchor1" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Assign Companies" Link="/Content/Tabs/Company Info/Assign Companies.htm#kanchor9" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Contacts">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Contacts" Link="/Content/Subjects/Contacts.htm#kanchor2" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Error">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Error Messages" Link="/Content/Subjects/Error and Status Messages.htm#kanchor7" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Import">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Import a Trial Balance from Email Inbox" Link="/Content/Tabs/Sheet Management/Import from Email Inbox.htm#kanchor5" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title=" Manually Import a Trial Balance" Link="/Content/Tabs/Sheet Management/Import Manually.htm#kanchor6" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Properties">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Properties" Link="/Content/Subjects/Properties.htm#kanchor3" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Assign Source Properties" Link="/Content/Tabs/Company Info/Assign Source Properties.htm#kanchor10" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+        </Entries>
+        <Links />
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+    </IndexEntry>
+</CatapultTargetIndex>

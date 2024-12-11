@@ -1,0 +1,1 @@
+define({numchunks:1,prefix:'Glossary_Chunk',terms:[{t:'Cash Flow Mapping',c:0},{t:'Client Account',c:0},{t:'Data Type',c:0},{t:'Export',c:0},{t:'Flip Multiplier',c:0},{t:'Group Cash Flows',c:0},{t:'Mapping',c:0},{t:'Parsing Rules',c:0},{t:'Sign Reversal',c:0},{t:'Source Account',c:0},{t:'Source Property',c:0}]});

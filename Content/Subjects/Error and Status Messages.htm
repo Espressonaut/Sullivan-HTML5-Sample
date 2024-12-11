@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Error Messages</title>
+        <link href="../Resources/TableStyles/LexSol.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/Modern.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h1>Dashboard <a name="kanchor8"></a>Error and Status Messages</h1>
+        <table style="mc-table-style: url('../Resources/TableStyles/LexSol.css');width: 100%;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" class="TableStyle-KBTable1" cellspacing="0">
+            <col class="Column-Column1" style="width: 285px;" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">Message</th>
+                    <th class="HeadE-Column1-Header1">Reason</th>
+                    <th class="HeadD-Column1-Header1">Solution</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: left;">ADJUSTED_COLUMN</td>
+                    <td class="BodyE-Column1-Body1">There is data in the "Adjusted " columns of a trial balance.</td>
+                    <td class="BodyD-Column1-Body1">Remove Adjusted Credits and Adjusted Debits columns from parsing instructions, reload file.</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: left;">BS_NOT_BALANCED</td>
+                    <td class="BodyE-Column1-Body2">Asset, Liability, and Equity line items do not balance to zero</td>
+                    <td class="BodyD-Column1-Body2">Review Trial Balance file and Target Account Types for accuracy. </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: left;">INCOMPLETE_MAPPING_FOR_ACCOUNT</td>
+                    <td class="BodyE-Column1-Body1">Source account not mapped.</td>
+                    <td class="BodyD-Column1-Body1">Map assigned source account.</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: left;">MISSING_BUDGET_MONTH</td>
+                    <td class="BodyE-Column1-Body2">Budget data missing for a month in respective year.</td>
+                    <td class="BodyD-Column1-Body2">Ensure parsing instructions match source file - monthly or annual.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: left;">OPENING_BALANCE</td>
+                    <td class="BodyE-Column1-Body1">Opening balance(s) for current month do not match previous month.</td>
+                    <td class="BodyD-Column1-Body1">Review error message from dashboard and trial balance file to identify opening balance error. If error is not wuthin acceptable criteria, notify BCAM Database Group and Asset Manager that new trial balance must be requested.</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: left;">PERIOD_AFTER_COLLECT _DATE</td>
+                    <td class="BodyE-Column1-Body2">Data loaded for property with end date set in system.</td>
+                    <td class="BodyD-Column1-Body2">Ensure that property had been sold, and no data collection needed. If unsold and active, update/remove property end date.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: left;">PERIOD_PRIOR_TO_COLLECT_DATE</td>
+                    <td class="BodyE-Column1-Body1">Data loaded for property prior to start date set in system.</td>
+                    <td class="BodyD-Column1-Body1">Review property dates and ensure with Asset Management that property is still under construction/development/rehab, and not leasing units.</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: left;">PRIOR_MONTH</td>
+                    <td class="BodyE-Column1-Body2">Data missing for prior month.</td>
+                    <td class="BodyD-Column1-Body2">Load previous trial balance or request from management company.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: left;">PROCESSED</td>
+                    <td class="BodyE-Column1-Body1">Data has been loaded into system and mapped without errors.</td>
+                    <td class="BodyD-Column1-Body1">None. File processed correctly.</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: left;">PROPERTY</td>
+                    <td class="BodyE-Column1-Body2">Source property not associated with client property in system.</td>
+                    <td class="BodyD-Column1-Body2">Map source property to client property.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: left;">TB_NOT_BALANCED</td>
+                    <td class="BodyE-Column1-Body1">Trial Balance file does not balance with trial balance check.</td>
+                    <td class="BodyD-Column1-Body1">Ensure that file is correctly formatted, and that Source Account Types are correctly mapped. If both are correct, request corrected Trial Balance for management company.</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: left;">UNASSIGNED_SOURCE_ACCOUNT_TYPE</td>
+                    <td class="BodyE-Column1-Body2">New account on source Trial Balance.</td>
+                    <td class="BodyD-Column1-Body2">Map unassigned Source Account Type. Ensure additional mappings for IP Equity and any cash flow mappings are accounted for in a replacement reserve account.   </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1" style="text-align: left;">UNPROCESSED</td>
+                    <td class="BodyB-Column1-Body1">Data has been loaded into system, has not been mapped.</td>
+                    <td class="BodyA-Column1-Body1">Wait 30 minutes and check again.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p class="copyright">Copyright © <script>/*<![CDATA[*/document.write((new Date()).getFullYear());/*]]>*/</script> Lexington Solutions. All rights reserved.</p>
+    </body>
+</html>

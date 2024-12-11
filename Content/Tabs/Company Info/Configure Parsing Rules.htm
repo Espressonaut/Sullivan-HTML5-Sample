@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Preparing for Data Input">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Parsing Instructions</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/Modern.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h1><a name="top"></a>Parsing Rules</h1>
+        <p>In order to identify data in the collection software, a set of instructions must be configured for each file format uploaded into the system. The system uses these instructions, called Parsing Rules, to identify where data is located in a spreadsheet, and what type of data it is. Parsing rules must be configured separately for Trial Balances and Budgets.</p>
+        <p>It is possible for one property to require multiple parsing configurations. </p>
+        <p>Configure Parsing Rules</p>
+        <ol>
+            <li value="1">Navigate to <b>Company Info</b> &gt; <b>Configure Parsing Rules</b></li>
+            <li value="2">Select Management Company from drop-down list</li>
+            <li value="3">Click <b>+Parsing Configuration</b></li>
+            <li value="4">Name parsing configuration and click <b>Add Parsing Configuration</b></li>
+            <li value="5">Select file format</li>
+            <li value="6">Select Location of Source Property ID/Name<ul style="list-style-type: square;"><li value="1">Tab Name</li><li value="2">In Cell</li><li value="3">User Input</li></ul></li>
+            <li value="7">Enter cell information from spreadsheet:<ul style="list-style-type: square;"><li value="1">Source Account ID Column(s) – column(s) that contain the source account number and source account description<ul style="list-style-type: circle;"><li value="1">Remove – number of leading characters to remove from the source account number, if any</li></ul></li><li value="2">Closing Balance 1 – primary closing balance of a trial balance file</li><li value="3">Closing Balance 2 – secondary closing balance of a trial balance file, if applicable<ul style="list-style-type: circle;"><li value="1">Some management companies report two closing balance columns, a debit column and a credit column. If trial balance does not list credits as negative (-), ‘Import as Negative’ must be checked</li></ul></li><li value="4">Opening Balance –opening balance column in the trial balance. Used for the opening balance validation.</li><li value="5">Debit – debit column in the trial balance, if any. May be used to map cash flows.</li><li value="6">Credit – credit column in the trial balance, if any. May be used to map cash flows.</li><li value="7">Adjusted Debit – adjusted debit column in trial balance, if any. Used for the adjusted debit/credit validation.</li><li value="8">Adjusted Credit – adjusted credit column in trial balance, if any. Used for the adjusted debit/credit validation.</li><li value="9">Monthly/YTD  – indicates whether debit and credit columns reflect month-to-date or year-to-date balances. Allows system to apply appropriate reversal rules to the data.</li></ul></li>
+            <p><span class="Note">Note: Configuration Name, File Format, Location of Source Property ID/Name, Source Account ID Column(s), and Closing Balance 1 are required regardless of file format.</span>
+            </p>
+        </ol>
+        <p class="copyright">Copyright © <script>/*<![CDATA[*/document.write((new Date()).getFullYear());/*]]>*/</script> Lexington Solutions. All rights reserved.</p>
+    </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Preparing for Data Input|Account Mappings">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Account Mapping Rules</title>
+        <link href="Resources/TableStyles/LexSol.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/Modern.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor5"></a>Account Mapping Rules</h1>
+        <p>Trial balances typically follow a format in which assets, liabilities, equity, income, and expenses have corresponding account numbers. The leading digit in an account number usually identifies the type of account. </p>
+        <p>Account types with their common leading digits are:</p>
+        <ul style="list-style-type: square;">
+            <li value="1">Asset – 1XXX (Trial Balances only)</li>
+            <li value="2">Liability – 2XXX (Trial Balances only)</li>
+            <li value="3">Equity – 3XXX</li>
+            <li value="4">Income – 4XXX <ul style="list-style-type: circle;"><li value="1"> Income source accounts may begin with 5XXX. If so, the leading digit on expense source account numbers will be increased.</li></ul></li>
+            <li value="5">Expense – 5XXX through 9XXX<ul style="list-style-type: circle;"><li value="1">Management companies may use different leading digits to identify types of expenses. For example, a company's source accounts for capital expenditures may begin with 7XXX, while its cash flows may begin with 8XXX.</li></ul></li>
+        </ul>
+        <p>Fusion expects certain data to have positive or negative values based upon account type. These rules assume a trial balance in the standard format in which assets are listed as debits (+) or credits (-). To ensure that the data is correct, the "Flip Multiplier" should be set as follows:</p>
+        <table style="width: 100%;mc-table-style: url('Resources/TableStyles/LexSol.css');margin-left: 0;margin-right: auto;" class="TableStyle-KBTable1" cellspacing="0">
+            <col style="width: 33%;" class="Column-Column1">
+            </col>
+            <col style="width: 33%;" class="Column-Column1">
+            </col>
+            <col class="Column-Column1" style="width: 33%;">
+            </col>
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">Account Type</th>
+                    <th class="HeadE-Column1-Header1">Expected Value</th>
+                    <th class="HeadD-Column1-Header1">Flip Multiplier Setting</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Asset</td>
+                    <td class="BodyE-Column1-Body1">Debit (+)</td>
+                    <td class="BodyD-Column1-Body1">No</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Liability</td>
+                    <td class="BodyE-Column1-Body2">Credit (-)</td>
+                    <td class="BodyD-Column1-Body2">Yes</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Equity</td>
+                    <td class="BodyE-Column1-Body1">Same as Balance</td>
+                    <td class="BodyD-Column1-Body1">Yes</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Income</td>
+                    <td class="BodyE-Column1-Body2">Credit (-)</td>
+                    <td class="BodyD-Column1-Body2">Yes</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Income - IP Equity</td>
+                    <td class="BodyE-Column1-Body1">Same as Balance</td>
+                    <td class="BodyD-Column1-Body1">Yes</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Expense</td>
+                    <td class="BodyE-Column1-Body2">Debit (+)</td>
+                    <td class="BodyD-Column1-Body2">No</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">Expenses - IP Equity</td>
+                    <td class="BodyB-Column1-Body1">Same as Balance</td>
+                    <td class="BodyA-Column1-Body1">Yes</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>There are some notable exceptions where Flip Multiplier should be set to "Yes":</p>
+        <table style="width: 100%;mc-table-style: url('Resources/TableStyles/LexSol.css');margin-left: 0;margin-right: auto;" class="TableStyle-KBTable1" cellspacing="0">
+            <col style="width: 220px;" class="Column-Column1">
+            </col>
+            <col style="width: 104px;" class="Column-Column1">
+            </col>
+            <col style="width: 100px;" class="Column-Column1">
+            </col>
+            <col class="Column-Column1">
+            </col>
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">Account Name</th>
+                    <th class="HeadE-Column1-Header1">Trial Balance Location</th>
+                    <th class="HeadE-Column1-Header1">Expected Value</th>
+                    <th class="HeadD-Column1-Header1">Destination Account</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Capital Expenditures</td>
+                    <td class="BodyE-Column1-Body1">Expenses</td>
+                    <td class="BodyE-Column1-Body1">Negative (-)</td>
+                    <td class="BodyD-Column1-Body1">5500 - Capital Expenditures</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Hard Debt Principal Payment</td>
+                    <td class="BodyE-Column1-Body2">Expenses</td>
+                    <td class="BodyE-Column1-Body2">Negative (-)</td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>5310 - Hard Debt Principal Payment</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Soft Debt Principal Payment</td>
+                    <td class="BodyE-Column1-Body1">Expenses</td>
+                    <td class="BodyE-Column1-Body1">Negative (-)</td>
+                    <td class="BodyD-Column1-Body1">5320 - Soft Debt Principal Payment</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Replacement Reserve Deposits</td>
+                    <td class="BodyE-Column1-Body2">Expenses*</td>
+                    <td class="BodyE-Column1-Body2">Negative (-)</td>
+                    <td class="BodyD-Column1-Body2">5330 - Replacement Reserve Deposits</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">Replacement Reserve Withdrawals</td>
+                    <td class="BodyB-Column1-Body1">Expenses*</td>
+                    <td class="BodyB-Column1-Body1">Positive (+)</td>
+                    <td class="BodyA-Column1-Body1">5335 - Replacement Reserve Withdrawals</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>*If Replacement Reserve Deposits and Replacement Reserve Withdrawals are not reported as expense line items on the trial balance, special mapping must be done. See <a href="MapCashFlowSteps.htm">Cash Flow Mappings</a>..</p>
+        <p>&#160;</p>
+        <p class="copyright">Copyright © <script>/*<![CDATA[*/document.write((new Date()).getFullYear());/*]]>*/</script> Lexington Solutions. All rights reserved.</p>
+    </body>
+</html>
